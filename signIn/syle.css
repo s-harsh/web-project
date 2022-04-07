@@ -1,0 +1,133 @@
+body {
+    color:rgb(112, 107, 107);
+    font-family:cursive;
+    padding: 10px 0px;
+    background: url(bg2.jpg) no-repeat center center fixed ;
+    background-size: cover;
+}
+
+.createAcc:hover,.email:hover,.password:hover{
+    color: hsl(220, 84%, 68%);
+    zoom: 150%;
+    /* display: "hello"; */
+}
+.name:hover,.phone:hover,.cpassword:hover{
+    color:#04AA6D;
+    zoom:150%
+}
+
+.logo{
+    color: rgb(255, 217, 0);
+}
+
+.logo:hover{
+    color:goldenrod;
+    zoom:130%;
+}
+
+.container{
+    position: absolute;
+    left: 15%;
+    top: 6%;
+    width: 70%;
+    background-color: rgb(253, 247, 247);
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.heading{
+    font-size: 35px;
+    text-align: center;
+}
+
+
+.formdesign {
+    font-size: 18px;
+    padding-left: 20px;
+    text-align:justify;
+
+}
+
+.formdesign input {
+    width: 65%;
+    padding: 5px 10px;
+    border: 1px solid rgb(157, 150, 150);
+    margin-bottom: 3px;
+    border-radius: 4px;
+    font-size: 13px;
+    background-color: aliceblue;
+    box-sizing:content-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    opacity: 10px;
+    outline-style:auto;
+}
+
+
+.formerror {
+    color:red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #f44336;
+    cursor: pointer;
+  }
+
+.clearfix{
+    padding-left: 10px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* Set a style for all buttons */
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 4px 0;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    opacity: 0.9;
+  }
+  
+  button:hover {
+    opacity:1;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+      /* margin: 2px; */
+    padding: 14px 20px;
+    background-color: #f44336;
+  }
+  
+  /* Float cancel and signup buttons and add an equal width */
+  .cancelbtn, .signupbtn {
+    float: left;
+    width: 45%;
+  }
+
+  .newDiv{
+    font-size: 40px;
+    border: 20px solid red;
+  }

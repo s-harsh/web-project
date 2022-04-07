@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="/My/Computer Science/Web developmenet/FrontEnd/Project2/signIn/syle.css">
+    <script src="/My/Computer Science/Web developmenet/FrontEnd/Project2/signIn/index.js"></script>
+    <script src="https://kit.fontawesome.com/6f300638ac.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="heading">  <i  class="logo fa fa-diamond"></i> Welcome to MAB
+            <p id="para" style="font-size: 18px; text-align: left; padding-left: 25px;"> <i class="createAcc fa fa-user-plus"></i> Create Account</p>
+            <hr class="headerLine" style="height: 1px; border: 1px solid rgb(32, 35, 36);">
+        </header>
+        <form aciton ="/index.html" name="myForm" onsubmit="return validateForm()" method="post">
+            <div class="formdesign" id="name">
+                <p><i class="name fa fa-user-o"></i> Name:</p> 
+                <input type="text" name="fname" required><b><span class="formerror"> </span></b>
+            </div>
+
+            <div class="formdesign" id="email">
+                <p> <i class="email fa fa-envelope"></i> Email:</p>
+                <input type="email" name="femail" required><b><span class="formerror"> </span></b>
+            </div>
+
+            <div class="formdesign" id="phone">
+                <p><i class="phone fa fa-mobile"></i> Phone: </p>
+                <input type="phone" name="fphone" pattern="[6-9]{1}[0-9]{9}" 
+                required><b><span class="formerror"></span></b>
+            </div>
+
+            <div class="formdesign" id="pass">
+                <p><i class="password fa fa-unlock"></i> Password: </p>
+                <input type="password" name="fpass" required><b> <span class="formerror" </span> </b>
+            </div>
+
+            <div class="formdesign" id="cpass">
+                <p><i class="cpassword fa fa-unlock-alt"></i> Confirm Password:</p>
+                <input type="password" name="fcpass" required><b><span class="formerror"></span></b>
+            </div>
+            <label for="">
+                <input type="checkbox" name="remember" style="margin-bottom: 15px;padding-top: 10px;" id="rememberMe">Remember Me
+            </label>
+            <br>
+
+            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+            <!-- <button class="but" type="submit" value="Submit">Submit</button> -->
+
+            <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn" value="Submit">Sign Up</button>
+              </div>
+
+        </form>
+    </div>
+</body>
+
+
+</html>
